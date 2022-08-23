@@ -47,6 +47,9 @@ ul {
 
 .header__container {
   background-color: #f7f7f7;
+  border-style: solid;
+  border-color: #7c7c7c;
+  border-width: 0px 1px 1px 0px;
 }
 .header__body {
   display: flex;
@@ -265,8 +268,8 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
-
 .interests {
   display: flex;
   flex-direction: row;

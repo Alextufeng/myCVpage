@@ -49,6 +49,9 @@ ul {
 .header {
     &__container {
         background-color: #f7f7f7;
+        border-style: solid;
+        border-color: #7c7c7c;
+        border-width: 0px 1px 1px 0px;
     }
     &__body {
         display: flex;
@@ -284,7 +287,8 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-//    &__item {}
+    align-items: center;
+    &__item {}
 }
 .interests {
     display: flex;
