@@ -160,7 +160,7 @@ ul {
     &__redirection {
         border-top: 1px solid #7c7c7c;
         border-right: 1px solid #7c7c7c;
-        padding: 10px 50px 10px 0;
+        padding: 10px 10% 10px 0;
         width: 50%;
         span {
             font-weight: bold;
@@ -183,7 +183,7 @@ ul {
     }
     &__ets {
         border-bottom:  1px solid #7c7c7c;
-        padding: 10px 0 10px 50px;
+        padding: 10px 0 10px 10%;
         width: 50%;
     }
     &__works {
@@ -347,7 +347,7 @@ ul {
 }
 .footer {
     &__container {
-        padding: 40px 0;
+        padding: 40px 10px;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
