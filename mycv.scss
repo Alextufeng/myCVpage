@@ -3,12 +3,24 @@ html {
     scroll-behavior: smooth;
     background-color: #fff;
     box-sizing: border-box;
+    height: 100%;
 }
 
 body {
     overflow-x: hidden;
+    display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
-
+.header {
+    flex: 0 0 auto;
+}
+.main {
+    flex: 1 0 auto;
+}
+.footer {
+    flex: 0 0 auto;
+}
 *,
 *::before,
 *::after {
@@ -47,6 +59,7 @@ ul {
 }
 
 .header {
+    margin: 0 16px;
     &__container {
         background-color: #f7f7f7;
         border-style: solid;
@@ -65,8 +78,6 @@ ul {
         border: 1px solid #7c7c7c;
         border-radius: 25px 0px 25px 0px;
         transition: all 0.2s ease-in-out;
-        //object-fit: cover;
-
         &:hover {
             cursor: pointer;
             transform: scale(1.07) rotate(-2deg);
@@ -78,9 +89,7 @@ ul {
         flex-direction: column;
         align-self: center;
     }
-    //&__nav {    
-        //margin-bottom: 20px;
-    //}
+    //&__nav {}
 }
 .name {
     &__title {
@@ -127,6 +136,9 @@ ul {
         display: flex;
         flex-direction: row;
         gap: 40px;
+        @media screen and (max-width: 800px) {
+            flex-wrap: wrap;
+        }
     }
     &__body {
         display: flex;
@@ -247,6 +259,8 @@ ul {
     flex-flow: row wrap;
     justify-content: space-around;
     text-align: center;
+    gap: 20px;
+    margin: 0 10px;
     &__item {
         display: flex;
         flex-direction: column;
@@ -288,7 +302,7 @@ ul {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    &__item {}
+//    &__item {}
 }
 .interests {
     display: flex;
@@ -316,6 +330,8 @@ ul {
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 16px;
         font-weight: bold;
+        gap: 20px;
+        margin: 0 10px;
     }
     &__item {
         padding: 10px 0;
@@ -329,4 +345,26 @@ ul {
         height: 60px;
     }
 }
+.footer {
+    &__container {
+        padding: 40px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 20px;
+        background-color: #f7f7f7;
+        border-style: solid;
+        border-color: #7c7c7c;
+        border-width: 1px 1px 0px 0px;
+    }
+    &__copyright {
+        margin-top: auto;
+        text-align: end;
+        font-style: italic;
+    }
+    &__text {
+        text-align: right;
+    }
+}
+
 
