@@ -78,6 +78,13 @@ ul {
         border: 1px solid #7c7c7c;
         border-radius: 25px 0px 25px 0px;
         transition: all 0.2s ease-in-out;
+        @media screen and (max-width: 400px) {
+            max-width: 200px;
+            max-height: 200px;
+        }
+        @media screen and (max-width: 360px) {
+            margin-top: 60px;
+        }
         &:hover {
             cursor: pointer;
             transform: scale(1.07) rotate(-2deg);
@@ -88,6 +95,9 @@ ul {
         display: flex;
         flex-direction: column;
         align-self: center;
+        @media screen and (max-width: 598px) {
+            order: 1;
+        }
     }
     //&__nav {}
 }
@@ -104,11 +114,16 @@ ul {
     }
 }
 .nav {
+    display: block;
+    position: relative;
     &__list {
         display: flex;
         flex-flow: row wrap;
         gap: 7px;
         margin-top: 10px;
+        @media screen and (max-width: 950px) {
+            display: none;
+        }
     }
     //&__item {}
     &__link{
@@ -129,6 +144,50 @@ ul {
         }
         
     }
+}
+.checkbox {
+    position: absolute;
+    display: none;
+    height: 32px;
+    width: 32px;
+    top: 10px;
+    right: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+    @media screen and (max-width: 950px) {
+        display: block;
+    }
+}
+.burger-lines {
+    display: none;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    @media screen and (max-width: 950px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+		&__line {
+            display: none;
+            height: 4px;
+            width: 100%;
+            border-radius: 10px;
+            background: #0e2431;
+            @media screen and (max-width: 950px) {
+                display: block;
+            }
+        }
+}
+.line1 {
+}
+.line2 {
+}
+.line3 {
 }
 
 .main {
