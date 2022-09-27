@@ -308,6 +308,9 @@ ul {
 .contacts__lang span {
   font-style: italic;
 }
+.contacts__lang a {
+  padding: 0;
+}
 
 .about__title {
   padding: 7px 0;
