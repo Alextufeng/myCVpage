@@ -282,8 +282,15 @@ ul {
   font-weight: bold;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .contacts__link {
-  padding: 0 5px;
+  padding: 5px 10px;
+  border-top: 1px solid #7c7c7c;
+  border-bottom: 1px solid #7c7c7c;
   border-radius: 5px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
@@ -298,9 +305,26 @@ ul {
   border-bottom: 1px solid #7c7c7c;
   padding: 10px 0 10px 10%;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contacts__works {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 .contacts__works h4 {
   font-weight: bold;
+}
+.contacts__lang {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .contacts__lang h4 {
   font-weight: bold;
@@ -308,8 +332,13 @@ ul {
 .contacts__lang span {
   font-style: italic;
 }
+.contacts__lang p {
+  padding: 5px 10px;
+}
 .contacts__lang a {
-  padding: 0;
+  padding: 5px 10px;
+  border-top: 1px solid #7c7c7c;
+  border-bottom: 1px solid #7c7c7c;
 }
 
 .about__title {
@@ -410,10 +439,28 @@ ul {
 }
 
 .time {
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  gap: 20px;
+}
+.time__item {
+  padding: 5px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #7c7c7c;
+  border-top: 1px solid #7c7c7c;
+}
+.time__item:hover {
+  transform: scale(1.07) rotate(-2deg);
+  box-shadow: 7px 7px 7px -3px rgba(0, 0, 0, 0.37);
+  background-color: #7c7c7c;
+}
+.time__item:hover a {
+  color: #f7f7f7;
 }
 
 .interests {
