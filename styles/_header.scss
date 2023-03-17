@@ -99,6 +99,9 @@
       background-color: #c7c7c7;
       color: #fff;
     }
+    @media screen and (max-width: 950px) {
+      padding: 5px 10px;
+    }
   }
 }
 .nav__list {

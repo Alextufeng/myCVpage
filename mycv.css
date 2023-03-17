@@ -168,6 +168,11 @@ ul {
   background-color: #c7c7c7;
   color: #fff;
 }
+@media screen and (max-width: 950px) {
+  .nav__link {
+    padding: 5px 10px;
+  }
+}
 
 .nav__list :nth-child(1) a {
   background-color: #44318d;
