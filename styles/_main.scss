@@ -1,0 +1,22 @@
+.main {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1 1 70%;
+  }
+  &__aside {
+    background-color: #f7f7f7;
+    border: 1px solid #7c7c7c;
+    flex: 1 1 30%;
+  }
+  //&__footer {}
+}

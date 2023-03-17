@@ -1,0 +1,22 @@
+.footer {
+  &__container {
+    padding: 40px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: $color-001-l;
+    border-style: solid;
+    border-color: #7c7c7c;
+    border-width: 1px 1px 0px 0px;
+    border-radius: 0 10px 0 0;
+  }
+  &__copyright {
+    margin-top: auto;
+    text-align: end;
+    font-style: italic;
+  }
+  &__text {
+    text-align: right;
+  }
+}

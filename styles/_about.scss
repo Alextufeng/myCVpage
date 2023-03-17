@@ -1,0 +1,18 @@
+.about {
+  &__title {
+    padding: 7px 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+  &__text {
+    background-color: $color-001-l;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5rem;
+    //max-width: 580px;
+    border-style: solid;
+    border-color: #7c7c7c;
+    border-width: 1px 1px 0px 0px;
+    border-radius: 0 10px 0 0;
+  }
+}
