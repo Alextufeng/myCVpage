@@ -1,0 +1,45 @@
+.interests {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #7c7c7c;
+  background-color: $color-004-l;
+  border-radius: 10px;
+  overflow: hidden;
+  &__title {
+    margin: -1px;
+    padding: 10px;
+    text-align: center;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    background-color: $color-004;
+    color: #fff;
+  }
+  &__list {
+    flex-grow: 1;
+    align-self: center;
+  }
+}
+.hobby {
+  &__list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 20px;
+    margin: 0 10px;
+  }
+  &__item {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__icon {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+  }
+}

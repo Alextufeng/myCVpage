@@ -1,0 +1,14 @@
+.edu {
+  margin-left: 5%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  &__item {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+    p {
+      font-style: italic;
+    }
+  }
+}
